@@ -76,7 +76,7 @@ IMG {
 ============================*/
 .c-section {
     min-height: 100vh;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
     overflow: hidden;
 }
 
@@ -371,7 +371,6 @@ IMG {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 11.25rem; /*~180px*/
     padding-top: 7rem;
 }
 
