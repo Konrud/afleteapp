@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Offline Page</title>
+
+    <style type="text/css" media="screen">
+        HTML{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:115%;font-size:calc(16px + (30 - 16) * (100vw - 300px)/ (1300 - 300));line-height:1.5;box-sizing:border-box}BODY{margin:0;color:#3a3d40;background:#feffff;text-align: center;}*,::after,::before{box-sizing:inherit;color:inherit}.o-btn{padding:.5rem 1.5rem;font-size:1.1rem;font-weight:700;border:2px solid #9fa4a7;border-radius:.1rem;background:#fefefe;box-shadow:0 2px 4px rgba(0,0,0,.25);cursor:pointer;transition:box-shadow .3s ease}.o-btn:hover{box-shadow:3px 6px 10px rgba(0,0,0,.2)}.o-btn:active{box-shadow:none}.c-canvas{position:relative;max-width:17rem;min-width:15rem;min-height:21.153rem;margin:0 auto;//border:1px solid red}.panda{position:absolute;left:0;bottom:0;width:17rem;height:19.03846rem;}.panda__head{position:absolute;left:5rem;top:.769rem;width:8rem;height:8.8rem;border-radius:60% 60% 46% 46%/70% 70% 40% 40%;background:rgba(200,200,200,1)}.panda__ear{position:absolute;width:5rem;height:7rem;border:4px solid #756959;border-radius:50%;background:#d7d3d3}.panda__ear--left{left:-2.69rem}.panda__ear--right{right:-2.69rem}.panda__ear--left::after,.panda__ear--left::before,.panda__ear--right::after,.panda__ear--right::before{content:"";position:absolute;width:3.84rem;height:1.73rem;background:#756959;z-index:-1}.panda__ear--left::after,.panda__ear--left::before{border-radius:80% 20% 0 0/100% 70% 0 0}.panda__ear--left::before{top:.153rem;left:-.69rem;transform:rotate(-15deg)}.panda__ear--left::after{top:2rem;left:-1.5rem;transform:rotate(-45deg)}.panda__ear--right::after,.panda__ear--right::before{border-radius:20% 80% 0 0/70% 100% 0 0}.panda__ear--right::before{top:.153rem;right:-.69rem;transform:rotate(15deg)}.panda__ear--right::after{top:2rem;right:-1.5rem;transform:rotate(45deg)}.panda__ear-outer{position:absolute;width:100%;height:100%;border-radius:inherit;background:inherit}.panda__ear-outer--left::after,.panda__ear-outer--left::before,.panda__ear-outer--right::after,.panda__ear-outer--right::before{content:"";position:absolute;width:2.2rem;height:.961rem;background:#d7d3d3}.panda__ear-outer--left::after,.panda__ear-outer--left::before{border-radius:80% 20% 0 0/100% 70% 0 0}.panda__ear-outer--left::before{top:.636rem;left:-.3286rem;transform:rotate(-22deg)}.panda__ear-outer--left::after{top:2.68rem;left:-1.076rem;transform:rotate(-50deg)}.panda__ear-outer--right::after,.panda__ear-outer--right::before{border-radius:20% 80% 0 0/70% 100% 0 0}.panda__ear-outer--right::before{top:.603rem;right:-.3286rem;transform:rotate(22deg)}.panda__ear-outer--right::after{top:2.641rem;right:-1.076rem;transform:rotate(50deg)}.panda__ear-middle{position:absolute;top:.3347rem;width:90%;height:95%;border-radius:inherit;background:#bab8b8}.panda__ear-middle--left{right:.23rem}.panda__ear-middle--right{left:.23rem}.panda__ear-middle--left::after,.panda__ear-middle--left::before,.panda__ear-middle--right::after,.panda__ear-middle--right::before{content:"";position:absolute;width:2.115rem;height:.769rem;background:inherit}.panda__ear-middle--left::after,.panda__ear-middle--left::before{border-radius:80% 20% 0 0/100% 70% 0 0}.panda__ear-middle--left::before{top:.254rem;left:0;transform:rotate(-15deg)}.panda__ear-middle--left::after{top:2.227rem;left:-1.0569rem;transform:rotate(-47deg)}.panda__ear-middle--right::after,.panda__ear-middle--right::before{border-radius:20% 80% 0 0/70% 100% 0 0}.panda__ear-middle--right::before{top:.254rem;right:0;transform:rotate(15deg)}.panda__ear-middle--right::after{top:2.227rem;right:-1.0569rem;transform:rotate(47deg)}.panda__ear-inner{position:absolute;top:1rem;width:3.288rem;height:4.6905rem;border-radius:50%;background:#eaf0ce}.panda__ear-inner--left{right:.469rem}.panda__ear-inner--right{left:.469rem}.panda__face{position:absolute;left:0;top:0;width:100%;height:100%;border:4px solid #756959;border-radius:inherit;background:inherit;box-shadow:10px 15px 0 #d7d3d3 inset,-10px 0 0 #d7d3d3 inset;z-index:2}.panda__eye,.panda__eye::before{position:absolute;border-radius:50%}.panda__eye{top:4.506rem;width:1.153rem;height:1.346rem;background:#000}.panda__eye::before{content:"";left:.29988rem;top:.1346rem;width:.4615rem;height:.47115rem;background:#fff}.panda__eye--left{left:1.54rem;transform:rotate(20deg) scaleY(1);animation:left-eye-blink 3s ease-in-out 10 forwards}.panda__mouth,.panda__nose{left:2.7415rem;width:2.307rem;position:absolute}.panda__eye--right{right:1.54rem;transform:rotate(-20deg) scaleY(1);animation:right-eye-blink 3s ease-in-out 10 forwards}@keyframes right-eye-blink{0%,33.33333333333%{transform:rotate(-20deg) scaleY(1)}43.3333333333%{transform:rotate(-20deg) scaleY(0)}100%,53.3333333333%{transform:rotate(-20deg) scaleY(1)}}@keyframes left-eye-blink{0%,33.33333333333%{transform:rotate(20deg) scaleY(1)}43.3333333333%{transform:rotate(20deg) scaleY(0)}100%,53.3333333333%{transform:rotate(20deg) scaleY(1)}}.panda__nose{top:4.676rem;height:2.5rem;border-radius:50% 50% 30% 30%/70% 70% 20% 20%;background:#565455;box-shadow:6px -7px 0 #555052 inset,-5px 0 0 #555052 inset;z-index:1}.panda__mouth{top:6.3768rem;height:1.923rem;border-radius:50%;background:#e1e0d5}.panda__body{position:absolute;left:6.4681rem;top:8.1863rem;width:5.106rem;height:7.615rem;background:#c8c8c8;border:4px solid #756959;border-radius:60% 60% 56% 56%/90% 90% 30% 30%;overflow:hidden;z-index:1}.panda__belly{position:absolute;left:0;top:.73rem;width:100%;height:5.121rem;background:#eaf0ce;border-radius:10% 10% 56% 56%/100% 100% 30% 30%}.panda__arm{position:absolute;top:8.9477rem;width:1.923rem;height:2.6923rem;background:#c8c8c8;border:4px solid #756959}.panda__arm--left{left:5.615rem;border-bottom-left-radius:24%;transform:rotate(25deg);box-shadow:7px 0 0 #d7d3d3 inset}.panda__arm--right{right:4.423rem;border-bottom-right-radius:24%;transform:rotate(-27deg);box-shadow:-7px 0 0 #d7d3d3 inset}.panda__foot,.panda__wrist{border:4px solid #756959;position:absolute}.panda__wrist{top:11rem;width:1.615rem;height:3.8461rem;background:#c8c8c8;border-top:0;z-index:2}.panda__wrist--left{left:6.2463rem;border-radius:25% 15% 70% 70%/100% 100% 50% 50%;transform:skew(29deg);box-shadow:8px 0 0 #d7d3d3 inset}.panda__wrist--right{right:4.204rem;top:10.8515rem;border-radius:25% 30% 70% 70%/100% 100% 50% 50%;transform:skew(-7deg);box-shadow:-8px 0 0 #d7d3d3 inset;z-index:1}.panda__foot{bottom:3.80769rem;width:2.1153rem;height:2.30769rem;background-color:#c8c8c8;border-radius:76%/65%;box-shadow:0 10px 0 #d7d3d3 inset}.panda__foot--left{left:4.7656rem;transform:rotate(-40deg)}.panda__foot--right{right:3.403846rem;transform:rotate(50deg)}.panda__foot-paw{position:absolute;bottom:1.71334rem;width:2.6923rem;height:3.846153rem;background:#c8c8c8;border:4px solid #756959;border-radius:76%/65%;z-index:1}.panda__foot-paw--left{left:4.2554rem;bottom:1.71334rem;transform:rotate(110deg);background-image:radial-gradient(ellipse at 65% 45%,#d7d3d3 50%,transparent 0)}.panda__foot-paw--right{right:3.403846rem;transform:rotate(-120deg);background-image:radial-gradient(ellipse at 37% 45%,#d7d3d3 50%,transparent 0)}.twig{position:absolute;left:6.63223rem;bottom:6.34615rem;width:9.352769rem;height:.1923rem;border:2px solid #756959;border-radius:0 20% 0 0/0 90% 0 0;transform:rotate(-27deg) skew(-4deg);background:#659037;z-index:1}.twig__leaf{position:absolute;width:1.9230769rem;height:1.5384rem;border:4px solid #4a6e24;border-radius:50% 0 50% 50%/100% 0 100% 100%;-webkit-transform:rotate(-20deg) scale(.8) skew(-40deg);transform:rotate(-20deg) scale(.8) skew(-40deg);background:inherit;background-image:linear-gradient(140deg,transparent 45%,#4a6e24 50%,transparent 0),linear-gradient(68deg,transparent 45%,#4a6e24 50%,transparent 0),linear-gradient(70deg,transparent 45%,#4a6e24 50%,transparent 0),linear-gradient(68deg,transparent 45%,#4a6e24 50%,transparent 0),linear-gradient(2deg,transparent 45%,#4a6e24 50%,transparent 0),linear-gradient(3deg,transparent 45%,#4a6e24 50%,transparent 0),linear-gradient(4deg,transparent 45%,#4a6e24 50%,transparent 0);background-size:100%,30px 14px,2px 9px,55px 51px,74px 37px,45px 3px,96px 22px;background-position:0,8px -2px,3px 5px,-20px -29px,11px 3px,3px -45px,24px 5px;background-repeat:no-repeat}.twig__leaf::before{content:"";position:absolute;left:0;bottom:-.308293rem;width:.26923rem;height:.384615rem;transform:rotate(25deg);background:inherit}.twig__leaf--top{right:-1.105169rem;top:-.884615rem;transform:rotate(24deg) scale(.7) skew(-42deg)}.twig__leaf--middle{left:5.0655rem;top:.153846rem;transform:rotate(60deg) scale(.7) skew(-42deg)}.twig__leaf--middle::before{left:0;bottom:-.86238rem;width:.307692rem;height:1.538461rem;transform:rotate(25deg)}.twig__leaf--bottom{left:2.302284rem;top:-1.9230769rem}@media screen and (min-width:1300px){HTML{font-size:1.875em}}
+    </style>
+
+</head>
+<body>
+
+
+    <h1>Oops, looks like you don't have network connection.</h1>
+
+    <div>
+        <button id="refresh" class="o-btn o-btn-refresh">Refresh page</button>
+    </div>
+
+
+    <!-- #region Panda -->
+
+    <section class="c-canvas">
+
+
+        <!--Panda-->
+        <div class="panda">
+
+            <!--Head-->
+            <div class="panda__head">
+
+                <!--Ears-->
+                <div class="panda__ear panda__ear--left">
+                    <div class="panda__ear-outer panda__ear-outer--left"></div>
+                    <div class="panda__ear-middle panda__ear-middle--left"></div>
+                    <div class="panda__ear-inner panda__ear-inner--left"></div>
+                </div>
+                <div class="panda__ear panda__ear--right">
+                    <div class="panda__ear-outer panda__ear-outer--right"></div>
+                    <div class="panda__ear-middle panda__ear-middle--right"></div>
+                    <div class="panda__ear-inner panda__ear-inner--right"></div>
+                </div>
+
+                <!--Face-->
+                <div class="panda__face">
+
+                    <!--Eyes-->
+                    <div class="panda__eye panda__eye--left"></div>
+                    <div class="panda__eye panda__eye--right"></div>
+
+                    <!--Nose-->
+                    <div class="panda__nose"></div>
+
+                    <!--Mouth-->
+                    <div class="panda__mouth"></div>
+
+                </div>
+
+            </div>
+
+            <!--Body-->
+            <div class="panda__body">
+                <div class="panda__belly"></div>
+            </div>
+
+            <!--Arms-->
+            <div class="panda__arm panda__arm--left"></div>
+            <div class="panda__arm panda__arm--right"></div>
+
+            <!--Wrists-->
+            <div class="panda__wrist panda__wrist--left"></div>
+            <div class="panda__wrist panda__wrist--right"></div>
+
+            <!--Feet-->
+            <div class="panda__foot panda__foot--left"></div>
+            <div class="panda__foot panda__foot--right"></div>
+            <div class="panda__foot-paw panda__foot-paw--left"></div>
+            <div class="panda__foot-paw panda__foot-paw--right"></div>
+
+        </div>
+
+
+        <!--Twig-->
+        <div class="twig">
+            <div class="twig__leaf twig__leaf--top"></div>
+            <div class="twig__leaf twig__leaf--middle"></div>
+            <div class="twig__leaf twig__leaf--bottom"></div>
+        </div>
+
+    </section>
+
+
+    <!-- #endregion -->
+
+
+    <script type="text/javascript">
+
+        var btn = document.getElementById("refresh");
+
+        btn.addEventListener("click", function (e) {
+            location.reload();
+        });
+
+    </script>
+
+</body>
+</html>

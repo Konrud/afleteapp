@@ -1,0 +1,558 @@
+HTML {
+    height: 100%;
+    /*using system font-stack*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: calc(16px + (20 - 16) * (100vw - 300px) / (1100 - 300) );
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+BODY {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgb(18, 97, 126);
+    background-image: linear-gradient(-225deg, rgb(18, 97, 126) 0%, rgb(8, 35, 60) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+}
+
+H1, H2 {
+    margin: 0;
+}
+
+A {
+    text-decoration: none;
+}
+
+P {
+    margin: 0;
+}
+
+FIGURE {
+    margin: 0;
+}
+
+IMG {
+    max-width: 100%;
+}
+
+
+/*Actual Style*/
+/*============================
+    HEADER
+============================*/
+.c-header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 7.5rem;/*~120px*/
+}
+
+/*============================
+    HEADER TITLE
+============================*/
+.c-header__title {
+    color: rgba(241, 241, 241, 1);
+}
+
+/*============================
+    MAIN
+============================*/
+.c-main {
+}
+
+/*============================
+    SECTION
+============================*/
+.c-section {
+    min-height: 100vh;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.c-section:nth-child(even) {
+    background-image: linear-gradient(400deg, rgb(18, 97, 126) 0%, rgb(8, 35, 60) 100%);
+}
+
+/*==============================
+    SECTION CONTENT CONTAINER
+================================*/
+.c-section__content-container {
+    position: relative;
+    display: flex;
+}
+
+/*============================
+    SECTION TITLE
+============================*/
+.c-section__title {
+    max-width: max-content;
+    margin: 0 auto;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.c-section__title::before, .c-section__title::after {
+    content: "";
+    position: absolute;
+}
+
+.c-section__title::before {
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid transparent;
+    border-top-color: inherit;
+    border-left-color: inherit;
+}
+
+.c-section__title::after {
+    right: 0;
+    bottom: 0;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid transparent;
+    border-bottom-color: inherit;
+    border-right-color: inherit;
+}
+
+/*============================
+    SECTION IMAGE WRAPPER
+============================*/
+.c-section__image-wrapper {
+
+}
+
+/*============================
+    SECTION IMAGE
+============================*/
+.c-section__image {
+}
+
+/*============================
+    SECTION--GOING DIGITAL
+============================*/
+.c-section--going-digital {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-section--going-digital .c-section__image {
+
+}
+
+.c-section--going-digital .c-section__content-container {
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.c-section--going-digital .c-section__content-container > * {
+    min-width: 33%;
+    max-width: 100%;
+    flex-grow: 1;
+    flex-basis: calc(1100px * 750 - 100% * 750);
+}
+
+.c-section--going-digital .c-section__paragraph {
+    align-self: flex-start;
+}
+
+/*=================================
+    SECTION--TRIED TESTED PROVEN
+===================================*/
+.c-section--tried-tested-proven {
+    display: flex;
+    flex-direction: column;
+    background: url(../Images/iphonex-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-clip: content-box;
+    background-origin: content-box;
+    padding-top: 3rem;
+}
+
+.c-section--tried-tested-proven .c-section__title {
+    margin-top: -2.5rem;
+}
+
+.c-section--tried-tested-proven .c-section__content-container {
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.c-section--tried-tested-proven .c-section__paragraph {
+    max-width: 50rem;
+    min-height: 25vmin;
+    padding: 20vmin 1rem;
+    background: rgba(15, 79, 107, 0.6);
+    backdrop-filter: blur(6px);
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 6px 0px rgba(45, 46, 47, 0.3);
+}
+
+/*=================================
+    SECTION--GROWTH
+===================================*/
+.c-section--growth {
+
+}
+
+.c-section--growth .c-section__content-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.c-section--growth .c-section__paragraph {
+    padding: 1rem 2rem;
+    background: rgb(248 254 255);
+    color: rgba(41, 44, 47, 0.7);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+    border-radius: 2rem;
+}
+
+.c-section--growth .c-section__paragraph:first-child {
+    max-width: 34.375rem;/*~550px*/
+    align-self: flex-end;
+}
+
+.c-section--growth .c-section__paragraph:last-child {
+    align-self: flex-start;
+    max-width: 29.375rem;/*470px*/
+}
+
+/*=================================
+    SECTION--BRAND IDENTITY
+===================================*/
+.c-section--brand-identity {
+    overflow: hidden;
+}
+
+
+.c-section--brand-identity .c-section__title {
+
+}
+
+.c-section--brand-identity .c-section__content-container {
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.c-section--brand-identity .c-section__paragraph {
+    align-self: flex-start;
+    margin-top: 5rem;
+    max-width: 43.75rem; /*~700px*/
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(165deg, transparent 20%, black 97%);
+    box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+.c-section--brand-identity .c-section__image-wrapper {
+    position: relative;
+    margin-top: 20vh;
+}
+
+
+.c-section--brand-identity .c-section__image-wrapper::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 13%;
+    width: 18.75rem;
+    height: 18.75rem;
+    background: rgba(255, 255, 255, 0.19);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.u-has-js .c-section--brand-identity .c-section__image-wrapper::after {
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll, 45deg) * -1s);
+}
+
+@keyframes rotate {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.c-section--brand-identity .c-section__image {
+    
+}
+
+/*=================================
+    SECTION--SALES REPORTING
+===================================*/
+.c-section--sales-reporting {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-section--sales-reporting .c-section__content-container {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.c-section--sales-reporting .c-section__paragraph {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 0;
+    padding: 2rem 0;
+    flex-grow: 1;
+}
+
+.c-section--sales-reporting .c-section__image-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/*============================
+    SECTION PARAGRAPH
+============================*/
+.c-section__paragraph {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+/*============================
+    SECTION EMPHASIS
+============================*/
+.c-section__emphasis {
+    font-style: normal;
+    font-weight: bolder;
+}
+
+/*============================
+    DOWNLOAD LINK
+============================*/
+.o-download-link {
+    width: 12.5rem; /*~200px*/
+    height: 6.25rem;/*~100px*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.o-download-link--android {
+    background-image: url("../Images/android.png");
+}
+
+.o-download-link--apple {
+    background-image: url("../Images/apple.png");
+}
+
+
+
+/*============================
+    JUMBO
+============================*/
+.c-jumbo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 11.25rem; /*~180px*/
+    padding-top: 7rem;
+}
+
+.c-jumbo__title {
+    max-width: 24.375rem; /*~390px*/
+    margin: 0 auto 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.c-jumbo__image {
+    width: 100%;
+    max-width: 21.875rem; /*~350px*/
+}
+
+.c-jumbo__links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+    transform: translateY(-4vh);
+}
+
+.c-jumbo__link {
+}
+
+.c-jumbo__link:first-child {
+   margin-right: 1rem;
+}
+
+.c-jumbo__link--android {
+}
+
+.c-jumbo__link--apple {
+    width: 10.6875rem; /*~171px*/
+}
+
+
+/*============================
+    FOOTER
+============================*/
+.c-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    justify-content: center;
+}
+
+.c-footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.c-footer__links::before {
+    content: "Get it on";
+    font-size: 2rem;
+}
+
+.c-footer__image-wrapper {
+    order: 1;
+}
+
+.c-footer__image-wrapper SVG {
+    max-width: 100%;
+}
+/*-----------------------
+    @MEDIA QUERIES
+-------------------------*/
+@media only screen and (min-width: 800px) {
+
+    /*we animate items only if we have JS enabled and screen is more than 800px wide*/
+    .u-has-js .c-section--tried-tested-proven .c-section__paragraph {
+        transition: transform 0.4s 0.1s ease-out, opacity 0.35s ease-out;
+        transform: translateY(25%);
+        opacity: 0;
+    }
+
+    .c-section--tried-tested-proven.is-animated .c-section__paragraph {
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    /*we animate items only if we have JS enabled and screen is more than 800px wide*/
+    .u-has-js .c-section--growth .c-section__paragraph:first-child,
+    .u-has-js .c-section--growth .c-section__paragraph:last-child {
+        transition: transform .5s .12s ease-in, opacity .53s ease-in;
+    }
+
+    .u-has-js .c-section--growth .c-section__paragraph:first-child {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    .u-has-js .c-section--growth .c-section__paragraph:last-child {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition-delay: .22s, 0;
+    }
+
+    .c-section--growth.is-animated .c-section__paragraph:first-child,
+    .c-section--growth.is-animated .c-section__paragraph:last-child {
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    .c-section--sales-reporting .c-section__content-container {
+        flex-direction: row;
+    }
+    .c-section--sales-reporting .c-section__paragraph {
+        max-width: 50%;
+        padding: 2rem 4rem;
+        flex-grow: 0;
+    }
+    .c-section--sales-reporting .c-section__image-wrapper {
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+    .c-section--sales-reporting .c-section__image {
+        transform: translateY(50%);
+    }
+
+    .c-footer {
+        flex-direction: row;
+    }
+
+    .c-footer__image-wrapper {
+        order: 0;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    HTML {
+        font-size: 20px;
+    }
+
+    .c-section--going-digital .c-section__paragraph {
+        align-self: auto;
+    }
+
+    .c-section--brand-identity {
+        display: flex;
+    }
+
+    .c-section--brand-identity .c-section__title {
+        max-height: 5rem;/*~80px*/
+    }
+
+    .c-section--brand-identity .c-section__title::after {
+        bottom: 1.5rem;
+    }
+
+    .c-section--brand-identity .c-section__paragraph {
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .c-section--going-digital .c-section__paragraph {
+        max-width: 46.875rem; /*~750px*/
+        font-size: 1.5rem;
+    }
+}
+
+
+/*-----------------------
+    UTITLITIES
+-------------------------*/
+.u-off-screen { /*another name for this class could be visually-hidden*/
+    position: fixed; /*we can set it as fixed, that will prevent jumping when it's clicked/targeted (but it will screw up focusing on the element)*/
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0); /*depreceted, only for IE9-11*/
+    white-space: nowrap; /*For long content, line feeds are not interpreted as spaces and small width causes content to wrap 1 word per line: https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe*/
+}
