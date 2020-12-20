@@ -439,7 +439,7 @@ IMG {
     order: 1;
 }
 
-.c-footer__image-wrapper SVG {
+.c-footer__image-wrapper svg {
     max-width: 100%;
 }
 /*-----------------------
